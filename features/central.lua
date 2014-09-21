@@ -4,7 +4,7 @@ local featureDef	=	{
 	world				="All Worlds",
 	description				="central",
 	category				="buildings",
-	object				="features/central/central.dae",
+	object				="features/escenografia/central.dae",
 	collisionvolumeoffsets = "0 0 0",
 	collisionvolumescales = "8 8 8",
 	collisionvolumetype = "Box",
@@ -25,7 +25,7 @@ local featureDef	=	{
 	featurereclamate				="smudge01",
 	seqnamereclamate				="tree1reclamate",
 	customparams = { 
-		randomrotate		= "true", 
+		randomrotate		= "false", 
 	}, 
 }
 return lowerkeys({[objectname] = featureDef}) 
