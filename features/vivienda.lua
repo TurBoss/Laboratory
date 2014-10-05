@@ -1,27 +1,32 @@
------------------------------------------------------------------------------
--- EIStatueCL2
------------------------------------------------------------------------------
+local objectname= "vivienda" 
 local featureDef	=	{
-	name				= "vivienda",
-	blocking			= true,
-	category			= "Rocks",
-	damage				= 10000,
-	description			= "Huge Rock",
-	energy				= 0,
-	flammable			= 0,
-	footprintX			= 19,
-	footprintZ			= 19,
-	height				= "298",
-	hitdensity			= "5",
-	metal				= 20,
+	name			= "finca",
+	world				="All Worlds",
+	description				="carcel",
+	category				="buildings",
+	object				="features/edificios/vivienda.dae",
+	--collisionvolumeoffsets = "0 0 0",
+	--collisionvolumescales = "8 8 8",
+	--collisionvolumetype = "Box",
+	useFootPrintCollisionVolume = true,
+	footprintx				=23,
+	footprintz				=14,
+	height				=30,
+	blocking				=true,
+	upright				=true,
+	hitdensity				=50,
+	energy				=0,
+
+	damage				=5000,
+	flammable				=false,
+	reclaimable				=false,
 	indestructible			=true,
-	object				= "features/escenografia/vivienda.dae",
-	reclaimable			= false,
-	autoreclaimable		= false, 	
-	world				= "All Worlds",
+	noselect=true,
+	autoreclaimable				=false,
+	featurereclamate				="smudge01",
+	seqnamereclamate				="tree1reclamate",
 	customparams = { 
 		randomrotate		= "false", 
 	}, 
 }
-return lowerkeys({[featureDef.name] = featureDef})
-
+return lowerkeys({[objectname] = featureDef}) 

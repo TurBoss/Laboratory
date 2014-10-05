@@ -29,7 +29,7 @@ local mapinfo = {
 
 
 	smf = {
-		minheight = 150,
+		minheight = 15,
 		maxheight = 0,
 		--smtFileName0 = "",
 		--smtFileName1 = "",

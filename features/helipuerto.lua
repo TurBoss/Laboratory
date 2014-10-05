@@ -2,6 +2,7 @@
 -- EIStatueCL2
 -----------------------------------------------------------------------------
 local featureDef	=	{
+	buildPic = "placeholder",
 	name				= "helipuerto",
 	blocking			= true,
 	category			= "Rocks",
@@ -15,7 +16,7 @@ local featureDef	=	{
 	hitdensity			= "5",
 	metal				= 20,
 	indestructible			=true,
-	object				= "features/escenografia/helipuerto.dae",
+	object				= "features/edificios/helipuerto.dae",
 	reclaimable			= false,
 	autoreclaimable		= false, 	
 	world				= "All Worlds",
