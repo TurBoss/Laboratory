@@ -4,11 +4,11 @@
 --
 
 local mapinfo = {
-	name        = "tetar",
-	shortname   = "tetar",
+	name        = "Laboratori",
+	shortname   = "Laboratori",
 	description = "Jauria Map",
 	author      = "PerroTron",
-	version     = "0.3",
+	version     = "0.2",
 	--mutator   = "deployment";
 	--mapfile   = "", --// location of smf/sm3 file (optional)
 	modtype     = 3, --// 1=primary, 0=hidden, 3=map
@@ -29,9 +29,9 @@ local mapinfo = {
 
 
 	smf = {
-		minheight = 15,
-		maxheight = 0,
-		--smtFileName0 = "",
+		minheight = 0,
+		maxheight = 100,
+		smtFileName0 = "laboratori.smt",
 		--smtFileName1 = "",
 		--smtFileName.. = "",
 		--smtFileNameN = "",
@@ -120,8 +120,8 @@ local mapinfo = {
 		fogEnd       = 1.0,
 		fogColor     = {0.7, 0.7, 0.8},
 
-		sunColor     = {1.0, 1.0, 1.0},
-		skyColor     = {0.1, 0.15, 0.7},
+		sunColor     = {0, 0, 0},
+		skyColor     = {0, 0, 0.2},
 		skyDir       = {0.0, 0.0, -1.0},
 		skyBox       = "",
 
@@ -148,10 +148,10 @@ local mapinfo = {
 		groundDiffuseColor  = {0.5, 0.5, 0.5},
 		groundSpecularColor = {0.1, 0.1, 0.1},
 		groundShadowDensity = 0.8,
-		unitAmbientColor    = {0.4, 0.4, 0.4},
-		unitDiffuseColor    = {0.7, 0.7, 0.7},
-		unitSpecularColor   = {0.7, 0.7, 0.7},
-		unitShadowDensity   = 0.8,
+		unitAmbientColor    = {0.3, 0.3, 0.3},
+		unitDiffuseColor    = {0.4, 0.4, 0.4},
+		unitSpecularColor   = {0.4, 0.4, 0.4},
+		unitShadowDensity   = 0.6,
 		
 		specularExponent    = 100.0,
 	},
@@ -206,8 +206,8 @@ local mapinfo = {
 	},
 
 	teams = {
-		[0] = {startPos = {x = 150, z = 2560}},
-		[1] = {startPos = {x = 4970, z = 2560}},
+		[0] = {startPos = {x = 300, z = 300}},
+		[1] = {startPos = {x = 2770, z = 2770}},
 		--[2] = {startPos = {x = 0, z = 0}},
 		--[3] = {startPos = {x = 0, z = 0}},
 	},

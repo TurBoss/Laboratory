@@ -1,0 +1,19 @@
+local objectname= "mapa" 
+local featureDef	=	{
+	name			= "mapa",
+	world				="All Worlds",
+	description				="central",
+	category				="buildings",
+	object				="features/mapa.dae",
+	useFootPrintCollisionVolume = true,
+	footprintx				=1,
+	footprintz				=1,
+	blocking				=false,
+	upright				=true,
+	flammable				=false,
+	reclaimable				=false,
+	indestructible			=true,
+	noselect=true,
+	autoreclaimable				=false,
+}
+return lowerkeys({[objectname] = featureDef}) 

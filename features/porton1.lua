@@ -1,0 +1,19 @@
+local objectname= "porton1" 
+local featureDef	=	{
+	name			= "porton1",
+	world				="All Worlds",
+	description				="central",
+	category				="buildings",
+	object				="features/porton1.dae",
+	useFootPrintCollisionVolume = true,
+	footprintx				=23,
+	footprintz				=2,
+	blocking				=true,
+	upright				=true,
+	flammable				=false,
+	reclaimable				=false,
+	indestructible			=true,
+	noselect=true,
+	autoreclaimable				=false, 
+}
+return lowerkeys({[objectname] = featureDef}) 
