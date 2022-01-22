@@ -38,10 +38,10 @@ end
 local GroundFogDefs = mapcfg.custom.fog
 
 if (GroundFogDefs.height == "auto") then
-	local min,max = Spring.GetGroundExtremes() 
+	local min,max = Spring.GetGroundExtremes()
 	GroundFogDefs.height = max
 elseif (GroundFogDefs.height:match("(%d+)%%")) then
-	local min,max = Spring.GetGroundExtremes() 
+	local min,max = Spring.GetGroundExtremes()
 	local percent = GroundFogDefs.height:match("(%d+)%%")
 	GroundFogDefs.height = max * (percent / 100)
 end
@@ -129,8 +129,8 @@ local GLSLRenderer = true
 local forceNonGLSL = false -- force using the non-GLSL renderer
 local post83 = false
 do
-	local engv = tonumber("0." .. Game.version:gsub("[^%d]",""):sub(2)) 
-	engv = engv + (Game.version:find("+") and 0.01 or 0)
+	local engv = tonumber("0." .. Engine.version:gsub("[^%d]",""):sub(2))
+	engv = engv + (Engine.version:find("+") and 0.01 or 0)
 	post83 = (engv >= 0.83)
 end
 if (forceNonGLSL) then
